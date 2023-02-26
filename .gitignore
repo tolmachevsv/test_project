@@ -69,3 +69,5 @@ target/
 .todo
 
 *.properties
+
+notifications/config.json
