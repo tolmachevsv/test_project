@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Tag("login_tests")
+@Feature("Authorization")
 public class LoginTests extends TestBase {
 
     LoginPage loginPage = new LoginPage();

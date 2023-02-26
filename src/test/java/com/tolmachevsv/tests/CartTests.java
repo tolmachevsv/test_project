@@ -4,12 +4,14 @@ import com.tolmachevsv.pages.LoginPage;
 import com.tolmachevsv.pages.MainPage;
 import com.tolmachevsv.pages.SearchPage;
 import io.qameta.allure.AllureId;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 
 @Tag("cart_tests")
+@Feature("Cart")
 public class CartTests extends TestBase {
 
     private final static String NAME = "sale";
