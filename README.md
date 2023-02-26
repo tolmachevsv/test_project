@@ -3,6 +3,6 @@ ________________________________________________________________________________
 
 #### Используемые технологии и инструменты
 
-| GitHub  | Second Header |
-| ------------- | ------------- |
-| <img src="https://github.com/favicon.ico" width="50" align="center">  | Content Cell  |
+| GitHub  | IntelliJ IDEA | Java | Gradle | JUnit 5 | Selenide | Jenkins | Selenoid | Allure Report | Allure TestOps | Telegram |
+| :---: |      :---:      | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="40" height="40">  | <img src="https://raw.githubusercontent.com/JetBrains/logos/318905148b7074a044586c6567d1ee76d8fb49e2/web/intellij-idea/intellij-idea.svg" width="30">  | <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/3/39/Java_logo.svg/351px-Java_logo.svg.png?20230113103550" width="22"> | <img src="https://gradle.com/wp-content/themes/fuel/assets/img/branding/gradle-elephant-icon-dark-green.svg" width="40"> | <img src="https://user-images.githubusercontent.com/46191990/221414912-9f5a9181-6a58-4ba2-b3be-620d0d8fa19f.png" width="55"> | <img src="https://user-images.githubusercontent.com/46191990/221415200-6162a078-955f-4be3-8ae8-1350215805b0.jpeg" width="55"> | <img src="https://user-images.githubusercontent.com/46191990/221415486-ca8686f0-0d5a-4d40-8858-1a844a39937b.png" width="40"> | <img src="https://user-images.githubusercontent.com/46191990/221415747-8b6fc198-d237-4b57-b103-ee2e63f32724.jpeg" width="35"> | <img src="https://user-images.githubusercontent.com/46191990/221416348-be1f6557-2259-470f-a789-516cadffd527.jpeg" width="35"> | <img src="https://user-images.githubusercontent.com/46191990/221416709-a5038b76-c7c8-434c-a8d0-f567248f2b26.svg" width="70"> | <img src="https://user-images.githubusercontent.com/46191990/221416898-5bd22273-cdcd-4782-895e-a9181fda3733.jpg" width="40"> |
