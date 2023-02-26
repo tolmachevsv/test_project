@@ -3,9 +3,11 @@ package com.tolmachevsv.tests;
 import com.tolmachevsv.pages.LoginPage;
 import com.tolmachevsv.pages.MainPage;
 import com.tolmachevsv.pages.SearchPage;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 
+@Tag("cart_tests")
 public class CartTests extends TestBase {
 
     private final static String NAME = "sale";

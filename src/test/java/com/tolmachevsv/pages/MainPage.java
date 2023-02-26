@@ -10,12 +10,12 @@ public class MainPage {
 
     SelenideElement searchButton = $("[role=search]");
 
-    @Step("Открываем главную страницу")
+    @Step("Open the main page")
     public void openPage() {
         open("");
     }
 
-    @Step("Нажимаем на кнопку поиска")
+    @Step("Click on the search button")
     public void clickSearchButton() {
         searchButton.click();
     }

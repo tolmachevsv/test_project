@@ -19,33 +19,33 @@ public class SearchPage {
     SelenideElement addToCart = $(".product-cart-buttons");
     SelenideElement genderField = $(".search-products-view__header");
 
-    @Step("Выбираем наименование {name} в трендах")
+    @Step("Choose a {name} in trends")
     public void chooseSaleInTrendsSection(String name) {
         trendsSection.$(byText(name)).click();
     }
 
-    @Step("Выбираем первый продукт")
+    @Step("Choose the first product")
     public void clickFirstItem() {
         firstGridItem.click();
     }
 
-    @Step("Выбираем первый вариант из списка размеров")
+    @Step("Choose the first option from the list of sizes")
     public void chooseTheFirstSizeOption() {
         chooseSizeBlock.get(0).shouldBe(visible);
         chooseSizeBlock.get(0).click();
     }
 
-    @Step("Нажимаем на кнопку Add to cart")
+    @Step("Click on the 'Add to cart' button")
     public void clickButtonAddToCart() {
         addToCart.click();
     }
 
-    @Step("Проверяем, что наименование товара совпадает с запрашиваемым товаром")
+    @Step("Check if the product name matches the requested product")
     public void checkCorrectProductNameInResults(String item) {
         firstGridItem.shouldHave(text(item));
     }
 
-    @Step("Выбираем мужской пол")
+    @Step("Choose the male gender")
     public void chooseAMaleGender() {
         genderField.$(byText("Man")).click();
     }

@@ -1,8 +1,10 @@
 package com.tolmachevsv.tests;
 
 import com.tolmachevsv.pages.LoginPage;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@Tag("login_tests")
 public class LoginTests extends TestBase {
 
     LoginPage loginPage = new LoginPage();

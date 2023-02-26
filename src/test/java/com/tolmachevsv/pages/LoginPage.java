@@ -21,33 +21,33 @@ public class LoginPage {
     SelenideElement validationText = $("#form-input__desc-logonId");
     SelenideElement expiredSessionText = $(".content-header__title span");
 
-    @Step("Открываем страницу авторизации")
+    @Step("Open /login")
     public void openPage() {
         open("/logon");
         loginTitleText.shouldHave(text("Log in to your account"));
     }
 
-    @Step("Вводим логин {text}")
+    @Step("Type login {text}")
     public void typeLogin(String text) {
         loginField.setValue(text);
     }
 
-    @Step("Вводим пароль (секретный)")
+    @Step("Type secret password")
     public void typePassword(String password) {
         passwordField.setValue(password);
     }
 
-    @Step("Нажимаем кнопку LOG IN")
+    @Step("Click on the LOG IN button")
     public void clickLogonButton() {
         logonButton.click();
     }
 
-    @Step("Проверка корректного ввода email")
+    @Step("Check if we type correct email")
     public void checkValidationText() {
         validationText.shouldHave(text("Enter a valid e-mail address."));
     }
 
-    @Step("Открывается уведомление о просроченной сессии")
+    @Step("Expired session notification opens")
     public void showExpiredPageText() {
         expiredSessionText.shouldHave(text("The session has expired"));
     }

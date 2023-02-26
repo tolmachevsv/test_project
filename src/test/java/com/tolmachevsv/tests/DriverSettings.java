@@ -17,15 +17,13 @@ public class DriverSettings {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
 
-        String loginZara = credentials.loginZara();
-        String passwordZara = credentials.passwordZara();
         String loginSelenoid = credentials.loginSelenoid();
         String passwordSelenoid = credentials.passwordSelenoid();
 
         Configuration.browserCapabilities = capabilities;
-        Configuration.baseUrl = "https://www.zara.com/id/en/";
-        Configuration.browserSize = "1920x1080";
-        String url = System.getProperty("urlSelenoid", "selenoid.autotests.cloud/wd/hub");
-//        Configuration.remote = format("https://%s:%s@%s", loginSelenoid, passwordSelenoid, url);
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://www.zara.com/id/en/");
+        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
+        String url = System.getProperty("selenoidUrl", "selenoid.autotests.cloud/wd/hub");
+        Configuration.remote = format("https://%s:%s@%s", loginSelenoid, passwordSelenoid, url);
     }
 }
