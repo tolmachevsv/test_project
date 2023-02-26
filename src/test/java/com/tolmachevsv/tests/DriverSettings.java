@@ -21,7 +21,8 @@ public class DriverSettings {
         String passwordSelenoid = credentials.passwordSelenoid();
 
         Configuration.browserCapabilities = capabilities;
-        Configuration.baseUrl = System.getProperty("baseUrl", "https://www.zara.com/id/en/");
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://www.zara.com");
+//        Configuration.baseUrl = System.getProperty("baseUrl", "https://www.zara.com/id/en/");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         String url = System.getProperty("selenoidUrl", "selenoid.autotests.cloud/wd/hub");
         Configuration.remote = format("https://%s:%s@%s", loginSelenoid, passwordSelenoid, url);

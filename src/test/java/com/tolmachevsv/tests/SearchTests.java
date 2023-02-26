@@ -2,6 +2,7 @@ package com.tolmachevsv.tests;
 
 import com.tolmachevsv.pages.MainPage;
 import com.tolmachevsv.pages.SearchPage;
+import io.qameta.allure.AllureId;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -13,6 +14,7 @@ public class SearchTests extends TestBase {
     MainPage mainPage = new MainPage();
     SearchPage searchPage = new SearchPage();
 
+    @AllureId("15215")
     @ValueSource(strings = {
             "dress",
             "blazer"

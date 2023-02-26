@@ -3,6 +3,7 @@ package com.tolmachevsv.tests;
 import com.tolmachevsv.pages.LoginPage;
 import com.tolmachevsv.pages.MainPage;
 import com.tolmachevsv.pages.SearchPage;
+import io.qameta.allure.AllureId;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -15,6 +16,7 @@ public class CartTests extends TestBase {
     MainPage mainPage = new MainPage();
     SearchPage searchPage = new SearchPage();
 
+    @AllureId("15216")
     @Test
     public void AddToCartWithSizeBlock() {
         mainPage.openPage();

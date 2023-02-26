@@ -1,6 +1,7 @@
 package com.tolmachevsv.tests;
 
 import com.tolmachevsv.pages.LoginPage;
+import io.qameta.allure.AllureId;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -9,6 +10,7 @@ public class LoginTests extends TestBase {
 
     LoginPage loginPage = new LoginPage();
 
+    @AllureId("15213")
     @Test
     public void SuccessfulLoginTest() {
         loginPage.openPage();
@@ -19,6 +21,7 @@ public class LoginTests extends TestBase {
         loginPage.showExpiredPageText();
     }
 
+    @AllureId("15214")
     @Test
     public void CheckLoginValidationTest() {
         loginPage.openPage();
