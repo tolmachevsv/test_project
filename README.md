@@ -1,6 +1,6 @@
-# Автотесты на интернет-магазин [Zara](https://www.zara.com/id/en/)
+# Autotests for online store [Zara](https://www.zara.com/id/en/)
 
-## :large_blue_circle: Используемые технологии и инструменты
+## :large_blue_circle: Technologies and tools used
 
 | GitHub  | IntelliJ IDEA | Java | Gradle | JUnit 5 | Selenide | Jenkins | Selenoid | Allure Report | Allure TestOps | Telegram |
 | :---: |      :---:      | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
