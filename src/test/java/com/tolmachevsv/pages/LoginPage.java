@@ -14,12 +14,12 @@ public class LoginPage {
     String login = DriverSettings.credentials.loginZara();
     String password = DriverSettings.credentials.passwordZara();
 
-    SelenideElement loginTitleText = $(".logon-view__section-title span");
-    SelenideElement loginField = $("[name=logonId]");
-    SelenideElement passwordField = $("[name=password]");
-    SelenideElement logonButton = $(byText("LOG IN"));
-    SelenideElement validationText = $("#form-input__desc-logonId");
-    SelenideElement expiredSessionText = $(".content-header__title span");
+    private final SelenideElement loginTitleText = $(".logon-view__section-title span");
+    private final SelenideElement loginField = $("[name=logonId]");
+    private final SelenideElement passwordField = $("[name=password]");
+    private final SelenideElement logonButton = $(byText("LOG IN"));
+    private final SelenideElement validationText = $("#form-input__desc-logonId");
+    private final SelenideElement expiredSessionText = $(".content-header__title span");
 
     @Step("Open /login")
     public void openPage() {

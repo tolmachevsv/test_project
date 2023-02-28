@@ -1,6 +1,5 @@
 package com.tolmachevsv.tests;
 
-import com.tolmachevsv.pages.LoginPage;
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
@@ -10,8 +9,6 @@ import org.junit.jupiter.api.Test;
 @Tag("login_tests")
 @Feature("Authorization")
 public class LoginTests extends TestBase {
-
-    LoginPage loginPage = new LoginPage();
 
     @AllureId("15213")
     @DisplayName("Successful login test")

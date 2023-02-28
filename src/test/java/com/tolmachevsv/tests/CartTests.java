@@ -1,8 +1,5 @@
 package com.tolmachevsv.tests;
 
-import com.tolmachevsv.pages.LoginPage;
-import com.tolmachevsv.pages.MainPage;
-import com.tolmachevsv.pages.SearchPage;
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
@@ -13,11 +10,6 @@ import org.junit.jupiter.api.Test;
 @Tag("cart_tests")
 @Feature("Cart")
 public class CartTests extends TestBase {
-
-    private final static String NAME = "sale";
-    LoginPage loginPage = new LoginPage();
-    MainPage mainPage = new MainPage();
-    SearchPage searchPage = new SearchPage();
 
     @DisplayName("Add to cart with size block")
     @AllureId("15216")

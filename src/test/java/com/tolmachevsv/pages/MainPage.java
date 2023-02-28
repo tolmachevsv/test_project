@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class MainPage {
 
-    SelenideElement searchButton = $("[role=search]");
+    private final SelenideElement searchButton = $("[role=search]");
 
     @Step("Open the main page")
     public void openPage() {

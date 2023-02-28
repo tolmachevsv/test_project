@@ -59,3 +59,9 @@ task cart_tests(type: Test) {
         includeTags("cart_tests")
     }
 }
+
+task help_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags("help_tests")
+    }
+}

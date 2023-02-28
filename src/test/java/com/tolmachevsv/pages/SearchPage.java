@@ -12,12 +12,12 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class SearchPage {
 
-    SelenideElement searchField = $("#search-products-form-combo-input");
-    SelenideElement trendsSection = $(".search-products-view__trends");
-    SelenideElement firstGridItem = $(".product-grid li");
-    ElementsCollection chooseSizeBlock = $$(".size-selector__size-list li");
-    SelenideElement addToCart = $(".product-cart-buttons");
-    SelenideElement genderField = $(".search-products-view__header");
+    private final SelenideElement searchField = $("#search-products-form-combo-input");
+    private final SelenideElement trendsSection = $(".search-products-view__trends");
+    private final SelenideElement firstGridItem = $(".product-grid li");
+    private final ElementsCollection chooseSizeBlock = $$(".size-selector__size-list li");
+    private final SelenideElement addToCart = $(".product-cart-buttons");
+    private final SelenideElement genderField = $(".search-products-view__header");
 
     @Step("Choose a {name} in trends")
     public void chooseSaleInTrendsSection(String name) {
