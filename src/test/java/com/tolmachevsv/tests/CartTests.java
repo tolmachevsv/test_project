@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("cart_tests")
 @Feature("Cart")
+@DisplayName("Cart tests")
 public class CartTests extends TestBase {
 
     @DisplayName("Add to cart with size block")

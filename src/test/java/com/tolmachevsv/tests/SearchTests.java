@@ -2,6 +2,7 @@ package com.tolmachevsv.tests;
 
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -9,6 +10,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 @Tag("search_tests")
 @Feature("Search")
+@DisplayName("Search tests")
 public class SearchTests extends TestBase {
 
     @AllureId("15215")
