@@ -1,22 +1,22 @@
 package com.tolmachevsv.tests;
 
 import io.qameta.allure.Feature;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-
 @Tag("help_tests")
 @Feature("Help")
+@DisplayName("Help tests")
 public class HelpTests extends TestBase {
 
+    @DisplayName("Check payment methods")
     @Test
     public void checkPaymentMethods() {
         mainPage.openPage();
-        $(byText("help")).click();
-        $("h1 .content-header__title").shouldHave(text("Help"));
-        $(byText("Payment")).parent().click();
+        helpPage.clickHelpButton();
+        helpPage.clickPaymentButton();
+        helpPage.clickPaymentMethodsButton();
+        helpPage.checkPaymentsMethods();
     }
 }

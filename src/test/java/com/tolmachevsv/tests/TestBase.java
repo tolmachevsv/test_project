@@ -2,6 +2,7 @@ package com.tolmachevsv.tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.tolmachevsv.helpers.Attach;
+import com.tolmachevsv.pages.HelpPage;
 import com.tolmachevsv.pages.LoginPage;
 import com.tolmachevsv.pages.MainPage;
 import com.tolmachevsv.pages.SearchPage;
@@ -15,6 +16,7 @@ public class TestBase {
     LoginPage loginPage = new LoginPage();
     MainPage mainPage = new MainPage();
     SearchPage searchPage = new SearchPage();
+    HelpPage helpPage = new HelpPage();
 
     @BeforeAll
     static void setUp() {
