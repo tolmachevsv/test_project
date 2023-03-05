@@ -21,7 +21,7 @@ public class SearchTests extends TestBase {
     @ParameterizedTest(name = "Search for {0} in the women's section")
     public void WomanItemsSearchTest(String womanItem) {
         mainPage.openPage();
-        mainPage.AcceptAllCookieAndCloseModalWindow();
+//        mainPage.AcceptAllCookieAndCloseModalWindow();
         mainPage.clickSearchButton();
         searchPage.getSearchField().setValue(womanItem);
         searchPage.checkCorrectProductNameInResults(womanItem);
@@ -34,7 +34,7 @@ public class SearchTests extends TestBase {
     @ParameterizedTest(name = "Search for {0} in the man's section")
     public void MenItemsSearchTest(String manItem) {
         mainPage.openPage();
-        mainPage.AcceptAllCookieAndCloseModalWindow();
+//        mainPage.AcceptAllCookieAndCloseModalWindow();
         mainPage.clickSearchButton();
         searchPage.chooseAMaleGender();
         searchPage.getSearchField().setValue(manItem);

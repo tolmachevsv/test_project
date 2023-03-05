@@ -14,7 +14,7 @@ public class HelpTests extends TestBase {
     @Test
     public void checkPaymentMethods() {
         mainPage.openPage();
-        mainPage.AcceptAllCookieAndCloseModalWindow();
+//        mainPage.AcceptAllCookieAndCloseModalWindow();
         helpPage.clickHelpButton();
         helpPage.clickPaymentButton();
         helpPage.clickPaymentMethodsButton();

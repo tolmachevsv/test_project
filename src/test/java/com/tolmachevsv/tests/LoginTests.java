@@ -19,7 +19,7 @@ public class LoginTests extends TestBase {
     @Test
     public void SuccessfulLoginTest() {
         loginPage.openPage();
-        mainPage.AcceptAllCookieAndCloseModalWindow();
+//        mainPage.AcceptAllCookieAndCloseModalWindow();
         loginPage.typeLogin(loginPage.getLogin());
         loginPage.typePassword(loginPage.getPassword());
         loginPage.clickLogonButton();
@@ -32,7 +32,7 @@ public class LoginTests extends TestBase {
     @Test
     public void CheckLoginValidationTest() {
         loginPage.openPage();
-        mainPage.AcceptAllCookieAndCloseModalWindow();
+//        mainPage.AcceptAllCookieAndCloseModalWindow();
         loginPage.typeLogin("test123");
         loginPage.typePassword("123");
         loginPage.checkValidationText();
