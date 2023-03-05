@@ -17,12 +17,13 @@ public class CartTests extends TestBase {
     @Test
     public void AddToCartWithSizeBlock() {
         mainPage.openPage();
+        mainPage.AcceptAllCookieAndCloseModalWindow();
         mainPage.clickSearchButton();
         searchPage.getSearchField().click();
         searchPage.chooseSaleInTrendsSection(NAME);
         // need to compare name of the first product with name of the added product
 //        String nameOfTheFirstItem = $(".product-grid li").text();
-        searchPage.clickFirstItem();
+        searchPage.clickOnTheItem();
         searchPage.chooseTheFirstSizeOption();
         searchPage.clickButtonAddToCart();
         // todo: think about the way to bypass expired session page

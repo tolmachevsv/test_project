@@ -14,7 +14,9 @@ public class SearchPage {
 
     private final SelenideElement searchField = $("#search-products-form-combo-input");
     private final SelenideElement trendsSection = $(".search-products-view__trends");
-    private final SelenideElement firstGridItem = $(".product-grid li");
+    private final SelenideElement findTheGridItem = $$(".product-grid li")
+            .findBy(text("BASIC EXTRA-FINE KNIT TOP"));
+    private final ElementsCollection searchItem = $$(".product-grid li");
     private final ElementsCollection chooseSizeBlock = $$(".size-selector__size-list li");
     private final SelenideElement addToCart = $(".product-cart-buttons");
     private final SelenideElement genderField = $(".search-products-view__header");
@@ -25,8 +27,8 @@ public class SearchPage {
     }
 
     @Step("Choose the first product")
-    public void clickFirstItem() {
-        firstGridItem.click();
+    public void clickOnTheItem() {
+        findTheGridItem.click();
     }
 
     @Step("Choose the first option from the list of sizes")
@@ -42,7 +44,8 @@ public class SearchPage {
 
     @Step("Check if the product name matches the requested product")
     public void checkCorrectProductNameInResults(String item) {
-        firstGridItem.shouldHave(text(item));
+        SelenideElement requirementItem = searchItem.findBy(text(item));
+        requirementItem.shouldHave(text(item));
     }
 
     @Step("Choose the male gender")

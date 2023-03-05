@@ -3,6 +3,8 @@ package com.tolmachevsv.tests;
 import com.codeborne.selenide.Configuration;
 import com.tolmachevsv.config.CredentialsConfig;
 import org.aeonbits.owner.ConfigFactory;
+import org.openqa.selenium.UnexpectedAlertBehaviour;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import static java.lang.String.format;
@@ -20,8 +22,9 @@ public class DriverSettings {
         String loginSelenoid = credentials.loginSelenoid();
         String passwordSelenoid = credentials.passwordSelenoid();
 
+//        capabilities.setCapability(CapabilityType.UNHANDLED_PROMPT_BEHAVIOUR, UnexpectedAlertBehaviour.ACCEPT);
         Configuration.browserCapabilities = capabilities;
-        Configuration.baseUrl = System.getProperty("baseUrl", "https://www.zara.com");
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://www.zara.com/id/en/");
 //        Configuration.baseUrl = System.getProperty("baseUrl", "https://www.zara.com/id/en/");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         String url = System.getProperty("selenoidUrl", "selenoid.autotests.cloud/wd/hub");
