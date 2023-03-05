@@ -26,7 +26,7 @@ public class SearchPage {
         trendsSection.$(byText(name)).click();
     }
 
-    @Step("Choose the first product")
+    @Step("Choose the product")
     public void clickOnTheItem() {
         findTheGridItem.click();
     }
